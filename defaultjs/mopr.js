@@ -12,7 +12,7 @@ $(document).ready(function() {
     });
 
     OS.output.pushBuffer([
-        'E0ATDT5I7N1D3E6X>',
+        'iTech Media Group>',
         ' CONNECT',
         '  '
     ]);
