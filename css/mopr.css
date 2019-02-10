@@ -1,0 +1,24 @@
+body, pre{
+background-color: black;
+         background-image: url(http://ropr.ryanroper.com/img/crtback.gif);
+         line-height: 27.2px;
+margin:5px;
+color: #AAFFCC;
+font-family: 'VenetiaMonitorRegular';
+font-size: 28px;
+   text-shadow: 0px 0px 3px #00CC00, 4px 0px 5px #338800, 3px 0px 3px #225500;
+}
+     #buffer {
+         filter: Shadow(Color=#338800,Direction=90,Strength=5);
+     }
+
+@font-face {
+    font-family: 'venetiamonitorregular';
+    src: url('../vmonitor-webfont.eot');
+    src: url('../vmonitor-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../vmonitor-webfont.woff') format('woff'),
+         url('../vmonitor-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
