@@ -151,7 +151,7 @@ classShell.prototype.screenMainMenu = function() {
         '1) ABOUT',
         '2) TURTLE POOL',
         '3) RAVEN POOL',
-        '4) NODES',
+        '4) ARCHIVE',
         '5) NOTES AND ANNOUCEMENTS',
         '6) GLOBAL THERMONUCLEAR WAR',
         ' '
@@ -209,7 +209,7 @@ classShell.prototype.comNanda = function() {
 
 classShell.prototype.comNodes = function() {
 
-    window.open("nodes.html","_self");
+    window.open("archives.html","_self");
 
     this.prompt();
 
