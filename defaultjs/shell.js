@@ -149,8 +149,8 @@ classShell.prototype.screenMainMenu = function() {
         '------------------------------',
         '0) DISCORD CHANNEL',
         '1) ABOUT',
-        '2) ',
-        '3) ',
+        '2) iTECH NEWS',
+        '3) COMING SOON!',
         '4) ARCHIVE',
         '5) NOTES AND ANNOUCEMENTS',
         '6) GLOBAL THERMONUCLEAR WAR',
@@ -266,7 +266,7 @@ classShell.prototype.comContact = function() {
 
 classShell.prototype.comTurtle = function() {
 
-    window.open("http://turtle.psrcrypto.com","_self"); 
+    window.open("https://newsitech.weebly.com/","_self"); 
     OS. output.pushBuffer([
         ' '
     ])
@@ -276,7 +276,7 @@ classShell.prototype.comTurtle = function() {
 
 classShell.prototype.comRaven = function() {
     
-    window.open("http://pool.raven.psrcrypto.com:8000","_self"); 
+    window.open("index.html","_self"); 
     OS. output.pushBuffer([
         ' '
     ])
