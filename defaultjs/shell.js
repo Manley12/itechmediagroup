@@ -149,8 +149,8 @@ classShell.prototype.screenMainMenu = function() {
         '------------------------------',
         '0) DISCORD CHANNEL',
         '1) ABOUT',
-        '2) TURTLE POOL',
-        '3) RAVEN POOL',
+        '2) ',
+        '3) ',
         '4) ARCHIVE',
         '5) NOTES AND ANNOUCEMENTS',
         '6) GLOBAL THERMONUCLEAR WAR',
@@ -230,7 +230,7 @@ classShell.prototype.admin = function() {
 
 classShell.prototype.comDiscord = function() {
 
-    window.open("https://discordapp.com","_self");
+    window.open("https://discord.gg/gaDYSKj","_self");
 
     this.prompt();
 
