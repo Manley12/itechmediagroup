@@ -94,6 +94,9 @@ classShell.prototype.comScreen = function( args ) {
         case 7:
             this.gtnw();
             break;
+        case 8:
+            this.jobs();
+            break;
         default:
             OS.output.pushBuffer("FUNCTION NOT IMPLEMENTED\n");
             this.screenMainMenu();
@@ -154,6 +157,7 @@ classShell.prototype.screenMainMenu = function() {
         '4) ARCHIVE',
         '5) NOTES AND ANNOUCEMENTS',
         '6) GLOBAL THERMONUCLEAR WAR',
+        '8) JOBS',
         ' '
     ];
 
@@ -250,6 +254,14 @@ classShell.prototype.comRavenAdmin = function() {
 
     this.prompt();
 
+};
+
+classShell.prototype.jobs = function() {
+  
+    window.open("jobs.html","_self");
+    
+    this.prompt();
+    
 };
 
 classShell.prototype.comContact = function() {
