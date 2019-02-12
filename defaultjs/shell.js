@@ -213,7 +213,7 @@ classShell.prototype.comNanda = function() {
 
 classShell.prototype.comNodes = function() {
 
-    window.open("archives.html","_self");
+    window.open("comingsoon.html","_self");
 
     this.prompt();
 
@@ -288,7 +288,7 @@ classShell.prototype.comTurtle = function() {
 
 classShell.prototype.comRaven = function() {
     
-    window.open("index.html","_self"); 
+    window.open("comingsoon.html","_self"); 
     OS. output.pushBuffer([
         ' '
     ])
