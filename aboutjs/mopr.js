@@ -13,7 +13,7 @@ $(document).ready(function() {
 
     OS.output.pushBuffer([
         'iTech Media Group>',
-        ' CONNECT',
+        ' ABOUT',
         '  '
     ]);
 
