@@ -106,7 +106,10 @@ classShell.prototype.comScreen = function( args ) {
 
 
 classShell.prototype.wopr = function() {
-    OS.output.pushBuffer(['AN INTERESTING GAME.']);
+    OS.output.pushBuffer([
+        ' ',
+        'AN INTERESTING GAME.'
+    ]);
     window.setTimeout( (function() {
         OS.output.pushBuffer(['THE ONLY WINNING MOVE IS NOT TO PLAY.\n']);
         this.prompt();
