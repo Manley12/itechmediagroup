@@ -121,7 +121,12 @@ classShell.prototype.screenMainMenu = function() {
         "            (v1.0)            ",
         '------------------------------',
         '0) HOME',
-        '1) ',
+        ' ',
+        ' ',
+        'iTech Media Group is composed of iTech News and iTech Gaming.',
+        ' ',
+        'iTech News is a technology blog that tend to focus on Apple, Inc. products and relating technology, though we want to get me into general technology news as well.',
+        /*'iTech Gaming is planned on being a blog/YouTube/Twitch gaming channel. This would include GPU benchmarks and more!',*/
         ' '
     ];
 
