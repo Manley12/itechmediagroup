@@ -14,37 +14,7 @@ var classShell = function() {
     this.parsePatterns = [
         { pattern: /^\s*$/, parser: 'prompt' },
         { pattern: /^([0-9])$/, parser: 'comScreen' },
-        { pattern: /^HELP/i, parser: 'comHelp' },
         { pattern: /^WELCOME/i, parser: 'screenMainMenu' },
-        {pattern: /^ADMIN/i, parser: 'admin' },
-        {pattern: /^TURTLE ADMIN/i, parser: 'comTurtleAdmin' },
-        {pattern: /^RAVEN ADMIN/i, parser: 'comRavenAdmin' },
-        {pattern: /^DISCORD/i, parser: 'comDiscord' },
-        {pattern: /^DISCORD CHANNEL/i, parser: 'comDiscord' },
-        {pattern: /^DISCORDCHANNEL/i, parser: 'comDiscord' },
-        {pattern: /^ABOUT/i, parser: 'comAbout' },
-        {pattern: /^TURTLE/i, parser: 'comTurtle'},
-        {pattern: /^RAVEN/i, parser: 'comRaven'},
-        {pattern: /^NODES/i, parser: 'comNodes' },
-        {pattern: /^NOTES/i, parser: 'comNanda' },
-        {pattern: /^NOTES AND/i, parser: 'comNanda' },
-        {pattern: /^NOTESAND/i, parser: 'comNanda' },
-        {pattern: /^NOTES AND ANNOUCEMENTS/i, parser: 'comNanda' },
-        {pattern: /^NOTESANDANNOUCEMENTS/i, parser: 'comNanda' },
-        {pattern: /^NOTES ANDANNOUCEMENTS/i, parser: 'comNanda' },
-        {pattern: /^NOTESAND ANNOUCEMENTS/i, parser: 'comNanda' },
-        {pattern: /^GLOBAL/i, parser: 'gtnw' },
-        {pattern: /^THERMONUCLEAR/i, parser: 'gtnw' },
-        {pattern: /^WAR/i, parser: 'gtnw' },
-        {pattern: /^GLOBAL WAR/i, parser: 'gtnw' },
-        {pattern: /^GLOBALWAR/i, paser: 'gtnw' },
-        {pattern: /^GLOBAL THERMONUCLEAR/i, parser: 'gtnw' },
-        {pattern: /^GLOBALTHERMONUCLEAR/i, parser: 'gtnw' },
-        {pattern: /^THERMONUCLEAR WAR/i, parser: 'gtnw' },
-        {pattern: /^THERMONUCLEARWAR/i, parser: 'gtnw' },
-        {pattern: /^GLOBAL THERMONUCLEAR WAR/i, parser: 'gtnw' },
-        {pattner: /^GLOBALTHERMONUCLEAR WAR/i, parser: 'gtnw' },
-        {pattern: /^GLOBAL THERMONUCLEARWAR/i, parser: 'gtnw' }
     ];
 
 };
@@ -71,31 +41,28 @@ classShell.prototype.comScreen = function( args ) {
     stdin = args[1];
     switch (parseInt(stdin)) {
         case 0:
-            this.comDiscord();
+            this.comWriten();
             break;
         case 1:
-            this.comAbout();
+            this.comSales();
             break;
         case 2:
-            this.comTurtle();
+            this.comMarketing();
             break;
         case 3:
-            this.comRaven();
+            this.comInterpreter();
             break;
         case 4:
-            this.comNodes();
+            this.comInterpreter();
             break;
         case 5:
-            this.comNanda();
+            this.comInterpreter();
             break;
         case 6:
             this.wopr();
             break;
         case 7:
             this.gtnw();
-            break;
-        case 8:
-            this.jobs();
             break;
         default:
             OS.output.pushBuffer("FUNCTION NOT IMPLEMENTED\n");
@@ -153,18 +120,37 @@ classShell.prototype.screenMainMenu = function() {
         "      iTech Media's JOBS      ",
         "            (v1.0)            ",
         '------------------------------',
-        '0) DISCORD CHANNEL',
-        '1) ABOUT',
-        '2) iTECH NEWS',
-        '3) COMING SOON!',
-        '4) STAFF',
-        '5) NOTES AND ANNOUCEMENTS',
-        '6) GLOBAL THERMONUCLEAR WAR',
-        '8) JOBS',
+        '0) WRITER',
+        '1) SALES LEAD',
+        '2) MARKETING LEAD',
         ' '
     ];
 
     OS.output.pushBuffer( page0 );
+    this.prompt();
+
+};
+
+classShell.prototype.comWriter = function() {
+
+    window.open("/jobs/writer.html","_self");
+
+    this.prompt();
+
+};
+
+classShell.prototype.comSales = function() {
+
+    window.open("/jobs/sales.html","_self");
+
+    this.prompt();
+
+};
+
+classShell.prototype.comMarketing = function() {
+
+    window.open("/jobs/marketing.html","_self");
+
     this.prompt();
 
 };
