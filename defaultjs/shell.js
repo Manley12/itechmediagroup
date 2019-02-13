@@ -157,7 +157,7 @@ classShell.prototype.screenMainMenu = function() {
         '1) ABOUT',
         '2) iTECH NEWS',
         '3) COMING SOON!',
-        '4) ARCHIVE',
+        '4) STAFF',
         '5) NOTES AND ANNOUCEMENTS',
         '6) GLOBAL THERMONUCLEAR WAR',
         '8) JOBS',
@@ -216,7 +216,7 @@ classShell.prototype.comNanda = function() {
 
 classShell.prototype.comNodes = function() {
 
-    window.open("comingsoon.html","_self");
+    window.open("staff.html","_self");
 
     this.prompt();
 
