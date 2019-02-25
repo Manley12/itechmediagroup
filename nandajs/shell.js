@@ -133,3 +133,19 @@ classShell.prototype.screenMainMenu = function() {
     this.prompt();
 
 };
+
+classShell.prototype.comHome = function() {
+
+    window.open("index.html","_self");
+
+    this.prompt();
+
+};
+
+classShell.prototype.comNotes = function() {
+
+    window.open("/nanda/notes.html","_self");
+
+    this.prompt();
+
+};
