@@ -41,10 +41,10 @@ classShell.prototype.comScreen = function( args ) {
     stdin = args[1];
     switch (parseInt(stdin)) {
         case 0:
-            this.comDiscord();
+            this.comHome();
             break;
         case 1:
-            this.comAbout();
+            this.comNotes();
             break;
         case 2:
             this.comTurtle();
