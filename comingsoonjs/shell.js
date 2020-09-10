@@ -122,10 +122,10 @@ classShell.prototype.screenMainMenu = function() {
         '------------------------------',
         '0) HOME',
         '1) COMING SOON!',
+        '2) iTech Jewelry ',
         ' ',
         ' ',
         ' ',
-        '*HINT* Name of this page will eventually be iTech Gaming',
         ' '
     ];
 
